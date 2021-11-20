@@ -6,12 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".YouTubeActivity">
 
-    <com.google.android.youtube.player.YouTubePlayerView
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/youtube_player_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/ytPlayer"
+        app:videoId="62JB64aQC9A"
+        app:autoPlay="true"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-
+        app:layout_constraintTop_toTopOf="parent"
+        app:showFullScreenButton="false" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
